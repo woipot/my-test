@@ -21,7 +21,7 @@ def calсulate_fibonacci(first_number, iterationsCount):
 def calсulate_fibonacci_super(first_number, iterationsCount):
     result = [first_number, 1]
     while not len(result) == iterationsCount:
-        last_number = len(result) - 1
+        last_number = len(result) - 1 + 10
         next_number = result[last_number] + result[last_number - 1]
         result.append(next_number)
     return result
