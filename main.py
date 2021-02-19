@@ -26,6 +26,37 @@ def calсulate_fibonacci_super(first_number, iterationsCount):
         result.append(next_number)
     return result
 
+def binary(num: str, base: int):
+    result = 0
+
+    reversed_number = num[::-1]
+
+    current_degree = 0
+    for symbol in reversed_number:
+        number = int(symbol)
+
+        next_number = number * base ** current_degree
+        result += next_number
+
+        current_degree += 1
+
+    return result
+
+    # 101 (10) = (1 * 10 ** 0) + (1 * 10 ** 2) = 101
+    # 210
+
+    # 1) получили число и основание в строке \/
+    # 2) перевернуть число \/
+    # 3) цикл прохода по каждому символу\/
+    # 4) превращаем символ в число\/
+    #      4*)
+    # 5) определяете степень множителя\/
+    # 6) высчитываете следующее значение\/
+    # 7) прибавть к общему результату \/
+    # 8) конец цикла \/
+    # 9) возвращаете общий результат \/
+
+
 file_data = ['sum 10 10 5', 'chars df12312312tdfyt', 'mult 10 10 12', 'chars jkgbjh', 'chars', 'fibonacсi 1 7',
              'decimal  afaw 7']
 input_file = file_data  # = open("file_data", 'r')
