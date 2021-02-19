@@ -23,7 +23,7 @@ def calсulate_fibonacci_super(first_number, iterationsCount):
     while not len(result) == iterationsCount:
         last_number = len(result) - 1 + 10
         next_number = result[last_number] + result[last_number - 1]
-        result.append(next_number)
+
     return result
 
 def binary(num: str, base: int):
